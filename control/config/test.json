@@ -1,0 +1,21 @@
+{
+	"Num Images" : 3, 
+	"Test 1" : {
+		"Exposure" : 1000, 
+		"Gain" : 50
+	},
+	"Test 2" : { 
+		"Exposure" : 2000, 
+		"Gain" : 100
+	}
+}
+
+
+
+
+
+
+
+
+
+
