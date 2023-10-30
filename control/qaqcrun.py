@@ -81,9 +81,6 @@ def main(args):
     print("Global configuration complete!")
     print('-' * 80)
 
-    if not args.setup_only:
-        cam.BeginAcquisition()
-
     for test_name in config.keys():
         if not "NumImages" in list(config[test_name].keys()):
             continue
@@ -96,6 +93,8 @@ def main(args):
             print('-' * 80)
             continue
 
+        cam.BeginAcquisition()
+
         create_dir(f"{dir_path}/{test_name}")
         for i in range(config[test_name]["NumImages"]):
             print(f"Acquiring image {i+1}...")
@@ -104,16 +103,14 @@ def main(args):
             if img.IsIncomplete():
                 print(f"Image {i+1} is incomplete! Status: {image_result.GetImageStatus()}")
 
-            file_name = f"{dir_path}/{test_name}/img_{i+1}.raw"
+            file_name = f"{dir_path}/{test_name}/img_{i+1:04}.raw"
             img.Save(file_name)
             print(f"Image saved at {file_name}!")
 
             img.Release()
 
-        print('-' * 80)
-
-    if not args.setup_only:
         cam.EndAcquisition()
+        print('-' * 80)
 
 
     print("Ending script!")
