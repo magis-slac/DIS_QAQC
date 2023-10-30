@@ -1,0 +1,74 @@
+{
+    "Global": {
+        "AcquisitionFrameRateEnable": true,
+        "BlackLevelClampingEnable": false,
+        "DefectCorrectStaticEnable": false,
+        "Gain" : 0,
+        "GammaEnable": false,
+        "AcquisitionMode": "PySpin.AcquisitionMode_Continuous",
+        "AdcBitDepth": "PySpin.AdcBitDepth_Bit12",
+        "PixelFormat": "PySpin.PixelFormat_Mono16",
+        "Height": 2840,
+        "Width": 2840
+    },
+    "NoGammaNoCorrectionAdc8": {
+        "NumImages": 5,
+        "ExposureTime": 10000,
+        "AdcBitDepth": "PySpin.AdcBitDepth_Bit8"
+    },
+    "NoGammaNoCorrectionAdc10": {
+        "NumImages": 5,
+        "ExposureTime": 10000,
+        "AdcBitDepth": "PySpin.AdcBitDepth_Bit10"
+    },
+    "NoGammaNoCorrectionAdc12": {
+        "NumImages": 5,
+        "ExposureTime": 10000,
+        "AdcBitDepth": "PySpin.AdcBitDepth_Bit12"
+    },
+    "GammaNoCorrectionAdc8": {
+        "NumImages": 5,
+        "ExposureTime": 10000,
+        "GammaEnable": true,
+        "Gamma": 1.0,
+        "AdcBitDepth": "PySpin.AdcBitDepth_Bit8"
+    },
+    "GammaNoCorrectionAdc10": {
+        "NumImages": 5,
+        "ExposureTime": 10000,
+        "GammaEnable": true,
+        "Gamma": 1.0,
+        "AdcBitDepth": "PySpin.AdcBitDepth_Bit10"
+    },
+    "GammaNoCorrectionAdc12": {
+        "NumImages": 5,
+        "ExposureTime": 10000,
+        "GammaEnable": true,
+        "Gamma": 1.0,
+        "AdcBitDepth": "PySpin.AdcBitDepth_Bit12"
+    },
+    "GammaCorrectionAdc8": {
+        "NumImages": 5,
+        "ExposureTime": 10000,
+        "GammaEnable": true,
+        "Gamma": 1.0,
+        "DefectCorrectStaticEnable": true,
+        "AdcBitDepth": "PySpin.AdcBitDepth_Bit8"
+    },
+    "GammaCorrectionAdc10": {
+        "NumImages": 5,
+        "ExposureTime": 10000,
+        "GammaEnable": true,
+        "Gamma": 1.0,
+        "DefectCorrectStaticEnable": true,
+        "AdcBitDepth": "PySpin.AdcBitDepth_Bit10"
+    },
+    "GammaCorrectionAdc12": {
+        "NumImages": 5,
+        "ExposureTime": 10000,
+        "GammaEnable": true,
+        "Gamma": 1.0,
+        "DefectCorrectStaticEnable": true,
+        "AdcBitDepth": "PySpin.AdcBitDepth_Bit12"
+    },
+}
